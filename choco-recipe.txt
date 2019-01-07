@@ -93,7 +93,7 @@ choco install -y greenshot
 choco install -y soapui
 choco install -y postman
 choco install -y bitnami-xampp
-choco install -y ultravnc
+choco install -y vnc-viewer
 
 #--- Build ---
 choco install -y ant
