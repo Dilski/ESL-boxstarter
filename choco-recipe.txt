@@ -24,6 +24,8 @@ Set-ItemProperty -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\AppModelU
 #--- Uninstall unecessary applications that come with Windows out of the box ---
 Write-Host "Uninstall some applications that come with Windows out of the box" -ForegroundColor "Yellow"
 
+
+#--- Remove shiteware from computer ---
 function removeApp {
 	Param ([string]$appName)
 	Write-Output "Trying to remove $appName"
@@ -78,10 +80,18 @@ foreach ($app in $applicationList) {
     removeApp $app
 }
 
+#--- Build ---
+choco install -y ant
+choco install -y ivy
+
 #--- Editors ---
 choco install -y intellijidea-ultimate
 choco install -y vscode
 choco install -y notepadplusplus.install
+
+#--- VSCode Extensions ---
+code --install-extension vscjava.vscode-java-pack
+code --install-extension nickheap.vscode-ant
 
 #--- Tools ---
 choco install -y 7zip.install
@@ -93,10 +103,6 @@ choco install -y soapui
 choco install -y postman
 choco install -y bitnami-xampp
 choco install -y vnc-viewer
-
-#--- Build ---
-choco install -y ant
-choco install -y ivy
 
 #--- Browsers ---
 choco install -y googlechrome
