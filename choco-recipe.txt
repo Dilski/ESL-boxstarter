@@ -102,6 +102,7 @@ choco install -y soapui
 choco install -y postman
 choco install -y bitnami-xampp
 choco install -y vnc-viewer
+choco install postgresql --version 9.2.1
 
 #--- Browsers ---
 choco install -y googlechrome
