@@ -102,7 +102,7 @@ choco install -y soapui
 choco install -y postman
 choco install -y bitnami-xampp
 choco install -y vnc-viewer
-choco install postgresql --version 9.2.1
+choco install -y postgresql --version 9.2.1
 
 #--- Browsers ---
 choco install -y googlechrome
@@ -126,6 +126,9 @@ RefreshEnv
 Ubuntu1804 install --root
 Ubuntu1804 run apt update
 Ubuntu1804 run apt upgrade -y
+
+#--- Hyper-V ---
+choco install -y Microsoft-Hyper-V-All --source="'windowsFeatures'"
 
 Enable-UAC
 Enable-MicrosoftUpdate
