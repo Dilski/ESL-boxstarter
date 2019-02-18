@@ -85,6 +85,7 @@ choco install -y ivy
 
 #--- Editors ---
 choco install -y intellijidea-ultimate
+choco install -y jetbrainstoolbox
 choco install -y vscode
 choco install -y notepadplusplus.install
 
@@ -96,6 +97,7 @@ code --install-extension nickheap.vscode-ant
 choco install -y 7zip.install
 choco install -y sysinternals
 choco install -y filezilla
+choco install -y winscp
 choco install -y putty
 choco install -y greenshot
 choco install -y soapui
