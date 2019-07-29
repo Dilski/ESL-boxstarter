@@ -106,6 +106,7 @@ choco install -y bitnami-xampp
 choco install -y vnc-viewer
 choco install -y xencenter
 choco install -y sonos-controller 
+choco install -y keepass
 
 #--- Browsers ---
 choco install -y googlechrome
