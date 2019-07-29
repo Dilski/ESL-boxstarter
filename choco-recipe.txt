@@ -104,7 +104,6 @@ choco install -y soapui
 choco install -y postman
 choco install -y bitnami-xampp
 choco install -y vnc-viewer
-choco install -y postgresql --version 9.2.1
 choco install -y xencenter
 choco install -y sonos-controller 
 
